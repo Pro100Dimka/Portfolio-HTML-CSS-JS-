@@ -14,8 +14,16 @@
     border-radius: 2%;
     background-color:coral;
     position: absolute;
-    width: 40%;
+    width: 30%;
 }
 .firstbox {
     text-align: center;
+}
+.text {
+    margin-left: 10%;
+    width: 80%;
+}
+.textbox
+{
+    float:right;
 }

@@ -9,23 +9,16 @@ function Result(){
     let Perc = document.querySelector('.Perc'); // Процент (выпадающий список)
     let StringOfComission = document.querySelector('.StringOfComission').value; //Комиссия кредита
     let FirctComission = document.querySelector('.FirctComission'); // Единовременные комиссии (выпадающий список)
-    let StringMounthComission = document.querySelector('.StringMounthComission').value; //Месячная комиссия
-    let MonthComission = document.querySelector('.MonthComission'); // месячные комиссии (выпадающий список)
-    let PaymentType = document.querySelector('.PaymentType'); // Тип платежа (выпадающий список)
-    let StartPaymentMonth = document.querySelector('.StartPaymentMonth'); // Срок начала в месяцах
-    let StartPaymentYear = document.querySelector('.StartPaymentYear'); // Срок начала в годах
     // Переобразование типа импута в числовой формат
     let SumOfCredit = Number(StringSumOfCredit); // Cумма кредита
     let TerminOfCredit = Number(StringTerminOfCredit); //Срок кредита
     let PercentOfCredit = Number(StringPercentOfCredit); //Процент кредита
     let Comission = Number(StringOfComission); //Комиссия кредита
-    let MounthComission = Number(StringMounthComission); //Месячная комиссия
     let YearToMonth; // Конвертирование срока оплаты кредита
     let percent = PercentOfCredit * 0.01; // Конвертирование в десятые проценты оплаты
     let PercResult; //Оплата процента в месяцах
     let AllSumOfCredit; //Общая сумма кредита
     let YearPayment; // Платеж в месяц
-    let overpayment;
     // единоразовый платёж 
     if (FirctComission.value == 'PercentFromCredit')
     {

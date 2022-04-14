@@ -15,15 +15,42 @@
     background-color:coral;
     position: absolute;
     width: 30%;
+    position: fixed;
+    overflow: hidden;
 }
 .firstbox {
     text-align: center;
 }
 .text {
-    margin-left: 10%;
-    width: 80%;
+    font-size: 13pt;
+    /*border: 1pt solid black;*/
+    width: 50px;
 }
 .textbox
 {
-    float:right;
+    font-size: 13pt;
+    width: 40%;
+    height: 15px;
+    margin: 5px;
+}
+.forma {
+    margin-right: 10%;
+    height: 25px;
+}
+.nacl {
+    font-size: 14pt;
+    text-align: center;
+}
+.field {
+    display: flex;
+     justify-content: flex-end;
+     margin-left: 5%;
+     margin-right: 5%;
+     padding: 10px;
+}
+.field > label {
+    flex: 1;
+}
+.field > form {
+    flex: 2;
 }

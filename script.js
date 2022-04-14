@@ -26,6 +26,15 @@ function Result(){
     let AllSumOfCredit; //Общая сумма кредита
     let YearPayment; // Платеж в месяц
     let overpayment;
+    // единоразовый платёж 
+    if (FirctComission.value == 'PercentFromCredit')
+    {
+        SumOfCredit = SumOfCredit - ((SumOfCredit / 100) * Comission)
+    }
+    else
+    {
+        SumOfCredit -= Comission;
+    }
     // условие если выбран год
     if (Termin.value == 'years')
     {
@@ -44,18 +53,11 @@ function Result(){
     {
         PercResult =  (SumOfCredit * percent);
     }
-
-
-
-
-
-
-
-
-    
     AllSumOfCredit = SumOfCredit + PercResult; //Полная сумма кредита
     YearPayment = AllSumOfCredit / YearToMonth; //Сумма ежемесячного
-   
+
+/*
+    localStorage.setItem("Currency", Currency.value)
     var SumOofCredit = AllSumOfCredit + '';
     localStorage.setItem("SumOfCredit", SumOofCredit) // полная сумма кредита
     var MonthPayment = YearPayment +''
@@ -64,5 +66,5 @@ function Result(){
     localStorage.setItem("Overpayment", PercResult) //передплата
     var Percent = PercResult + '';
     localStorage.setItem("Percent", PercentOfCredit) //проценты
-    document.location.href = "Result.html"
+    document.location.href = "Result.html"*/
 }

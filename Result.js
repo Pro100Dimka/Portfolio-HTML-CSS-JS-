@@ -1,6 +1,8 @@
-var SumOfCredit = localStorage.getItem("SumOfCredit"); ;
+var Currency = localStorage.getItem("Currency"); //валюта 
+
+var SumOfCredit = localStorage.getItem("SumOfCredit"); 
 var Stag = document.getElementById("SumOfCredit");
-Stag.innerHTML = SumOfCredit; //Полная сумма кредита
+Stag.innerHTML = SumOfCredit + ' ' + Currency; //Полная сумма кредита
 
 var Mpayment = localStorage.getItem("MonthPayment"); 
 var Mtag = document.getElementById("MonthPayment")

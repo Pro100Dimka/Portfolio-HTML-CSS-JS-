@@ -17,5 +17,20 @@
     position: fixed;
     overflow: hidden;
     border: 1pt solid black;
-    width: 620px;
+    width: 520px;
+    height: 320px;
+}
+.rows {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.text {
+    width: 50%;
+    flex: 2;
+}
+.result {
+    width: 50%;
+    flex: 1;
+    text-align: right;
 }

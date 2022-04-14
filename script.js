@@ -56,7 +56,6 @@ function Result(){
     AllSumOfCredit = SumOfCredit + PercResult; //Полная сумма кредита
     YearPayment = AllSumOfCredit / YearToMonth; //Сумма ежемесячного
 
-/*
     localStorage.setItem("Currency", Currency.value)
     var SumOofCredit = AllSumOfCredit + '';
     localStorage.setItem("SumOfCredit", SumOofCredit) // полная сумма кредита
@@ -66,5 +65,5 @@ function Result(){
     localStorage.setItem("Overpayment", PercResult) //передплата
     var Percent = PercResult + '';
     localStorage.setItem("Percent", PercentOfCredit) //проценты
-    document.location.href = "Result.html"*/
+    document.location.href = "Result.html"
 }

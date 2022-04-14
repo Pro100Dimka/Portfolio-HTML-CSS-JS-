@@ -12,23 +12,39 @@ function Result(){
     let StringMounthComission = document.querySelector('.StringMounthComission').value; //Месячная комиссия
     let MonthComission = document.querySelector('.MonthComission'); // месячные комиссии (выпадающий список)
     let PaymentType = document.querySelector('.PaymentType'); // Тип платежа (выпадающий список)
-    let StartPaymentMonth = document.querySelector('.StartPaymentMonth');
-    let StartPaymentYear = document.querySelector('.StartPaymentYear');
+    let StartPaymentMonth = document.querySelector('.StartPaymentMonth'); // Срок начала в месяцах
+    let StartPaymentYear = document.querySelector('.StartPaymentYear'); // Срок начала в годах
     // Переобразование типа импута в числовой формат
-    let SumOfCredit = Number(StringSumOfCredit);
-    let TerminOfCredit = Number(StringTerminOfCredit);
-    let PercentOfCredit = Number(StringPercentOfCredit);
-    let Comission = Number(StringOfComission);
-    let MounthComission = Number(StringMounthComission);
-    console.log(MonthComission.value);
-
-
+    let SumOfCredit = Number(StringSumOfCredit); // Cумма кредита
+    let TerminOfCredit = Number(StringTerminOfCredit); //Срок кредита
+    let PercentOfCredit = Number(StringPercentOfCredit); //Процент кредита
+    let Comission = Number(StringOfComission); //Комиссия кредита
+    let MounthComission = Number(StringMounthComission); //Месячная комиссия
+    let YearToMonth; // Конвертирование срока оплаты кредита
+    let percent = PercentOfCredit * 0.01; // Конвертирование в десятые проценты оплаты
+    let PercResult; //Оплата процента в месяцах
+    let AllSumOfCredit; //Общая сумма кредита
+    let YearPayment; // Платеж в месяц
     // условие если выбран год
-    
-    /*console.log(`Вы хотите взять ${SumOfCredit} на срок ${TerminOfCredit}. Ваш процент будет ${PercentOfCredit}`);
-    let percent = PercentOfCredit * 0.01;
-    let AllSumOfCredit = SumOfCredit + (SumOfCredit * percent);
-    let YearPayment = AllSumOfCredit / TerminOfCredit
+    if (Termin.value == 'years')
+    {
+        YearToMonth = TerminOfCredit * 12;
+    }
+    else 
+    {
+        YearToMonth = TerminOfCredit;
+    }
+    //условие оплаты процентов(в месяц или в год)
+    if (Perc.value == 'PercentMonth')
+    {
+        PercResult =  (SumOfCredit * percent) * YearToMonth;
+    }
+    else 
+    {
+        PercResult =  (SumOfCredit * percent);
+    }
+    AllSumOfCredit = SumOfCredit + PercResult;
+    YearPayment = AllSumOfCredit / YearToMonth;
     console.log(`Полная сумма кредита: ${AllSumOfCredit}`);
-    console.log(`Платёж в месяц: ${YearPayment}`);*/
+    console.log(`Платёж в месяц: ${YearPayment}`);
 }

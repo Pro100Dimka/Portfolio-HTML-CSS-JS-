@@ -25,6 +25,7 @@ function Result(){
     let PercResult; //Оплата процента в месяцах
     let AllSumOfCredit; //Общая сумма кредита
     let YearPayment; // Платеж в месяц
+    let overpayment;
     // условие если выбран год
     if (Termin.value == 'years')
     {
@@ -43,8 +44,25 @@ function Result(){
     {
         PercResult =  (SumOfCredit * percent);
     }
-    AllSumOfCredit = SumOfCredit + PercResult;
-    YearPayment = AllSumOfCredit / YearToMonth;
-    console.log(`Полная сумма кредита: ${AllSumOfCredit}`);
-    console.log(`Платёж в месяц: ${YearPayment}`);
+
+
+
+
+
+
+
+
+    
+    AllSumOfCredit = SumOfCredit + PercResult; //Полная сумма кредита
+    YearPayment = AllSumOfCredit / YearToMonth; //Сумма ежемесячного
+   
+    var SumOofCredit = AllSumOfCredit + '';
+    localStorage.setItem("SumOfCredit", SumOofCredit) // полная сумма кредита
+    var MonthPayment = YearPayment +''
+    localStorage.setItem("MonthPayment", YearPayment) // платить в мес
+    var Overpayment = PercResult + '';
+    localStorage.setItem("Overpayment", PercResult) //передплата
+    var Percent = PercResult + '';
+    localStorage.setItem("Percent", PercentOfCredit) //проценты
+    document.location.href = "Result.html"
 }

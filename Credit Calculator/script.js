@@ -48,15 +48,15 @@ function Result(){
     }
     AllSumOfCredit = SumOfCredit + PercResult; //Полная сумма кредита
     YearPayment = AllSumOfCredit / YearToMonth; //Сумма ежемесячного
+    // функция округления сотых чисел
+    var rounded = function(number){
+        return +number.toFixed(2);
+    } 
 
     localStorage.setItem("Currency", Currency.value)
-    var SumOofCredit = AllSumOfCredit + '';
-    localStorage.setItem("SumOfCredit", SumOofCredit) // полная сумма кредита
-    var MonthPayment = YearPayment +''
-    localStorage.setItem("MonthPayment", YearPayment) // платить в мес
-    var Overpayment = PercResult + '';
+    localStorage.setItem("SumOfCredit", AllSumOfCredit) // полная сумма кредита
+    localStorage.setItem("MonthPayment", rounded(YearPayment)) // платить в мес
     localStorage.setItem("Overpayment", PercResult) //передплата
-    var Percent = PercResult + '';
     localStorage.setItem("Percent", PercentOfCredit) //проценты
     document.location.href = "Result.html"
 }

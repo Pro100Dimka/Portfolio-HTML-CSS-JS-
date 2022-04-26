@@ -1,0 +1,47 @@
+/*Обнуление всего*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Первый блок. Логотип и портфолио*/
+header {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+}
+.header___logo{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    margin-left: 12%; 
+    cursor: pointer;
+    margin-top: 57px;
+  }
+  nav{
+    margin-top: 57px;
+    margin-left: 29%; 
+  }
+  .topnav a {
+    color:#fff;
+    text-align: center;
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .topnav a:hover{
+      border-bottom: 3px solid #fcac45;
+  }
+  .topnav .icon{
+      display: none;
+  }

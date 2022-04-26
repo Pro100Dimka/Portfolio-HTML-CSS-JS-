@@ -46,51 +46,7 @@ header {
       display: none;
   }
 
-  @media screen and (max-width:1300px) {
-    nav {
-        margin-left: 20%;
-    }
-  }
 
-  @media screen and (max-width:1205px) {
-    nav {
-        margin-left: 10%;
-    }
-  }
-
-  @media screen and (max-width:1010px) {
-    .topnav a {
-        display: none;
-    }
-    .topnav .icon{
-        display: block;
-        float: right;
-        margin-top: -17px;
-        font-size: 24px;
-    }
-    nav{
-        width: 100%;
-    }
-    /*Бургер меню*/
-    .topnav.responsive{
-        position: relative;
-        top: 50px;
-        left: -200px;
-    }
-    .header .topnav.responsive{
-        height: 340px;
-    }
-    .topnav.responsive a.icon{
-        position: absolute;
-        top: 50px;
-        right: -200px;
-    }
-    .topnav.responsive a{
-        float: none;
-        display: block;
-        text-align: left;
-    }
-  }
   /*Второй блок*/
   main{
       display: flex;
@@ -155,5 +111,91 @@ header {
       color: #848484;
   }
   .about_right li{
-      background: url(Images/Dot.png) 0px no-repeat;
+      background: url(../Images/Dot.png) 0px no-repeat;
+      padding-left: 25px;
+      color: #5a5a5a;
+      font-size: 16px;
+      font-style: italic;
+  }
+  .liText{
+    font-weight: 600;
+    font-style: normal;
+  }
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width:1300px) {
+    nav {
+        margin-left: 20%;
+    }
+    main .main__welcome h1{
+        font-size: 40px;
+    }
+    main .main__welcome p{
+        font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width:1205px) {
+    nav {
+        margin-left: 10%;
+    }
+    main .main__welcome h1{
+        font-size: 40px;
+    }
+    main .main__welcome p{
+        font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width:1010px) {
+    .topnav a {
+        display: none;
+    }
+    .topnav .icon{
+        display: block;
+        float: right;
+        margin-top: -17px;
+        font-size: 24px;
+    }
+    nav{
+        width: 100%;
+    }
+    /*Бургер меню*/
+    .topnav.responsive{
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+    .header .topnav.responsive{
+        height: 340px;
+    }
+    .topnav.responsive a.icon{
+        position: absolute;
+        top: 50px;
+        right: -200px;
+    }
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+
+    /*Адаптирование блоков*/
+    main .main__welcome{
+        padding: 50px 0 50px 0;
+    }
+    main .main__welcome h1{
+        font-size: 25px;
+    }
+    main .main__welcome p{
+        font-size: 14px;
+    }
   }

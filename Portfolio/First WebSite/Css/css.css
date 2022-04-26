@@ -121,6 +121,9 @@ header {
     font-weight: 600;
     font-style: normal;
   }
+.mw-100{
+    min-width: 100%;
+}
 
 
 
@@ -129,8 +132,7 @@ header {
 
 
 
-
-  @media screen and (max-width:1300px) {
+  @media screen and (max-width:1320px) {
     nav {
         margin-left: 20%;
     }
@@ -151,6 +153,20 @@ header {
     }
     main .main__welcome p{
         font-size: 20px;
+    }
+    .main__about{
+        flex-direction: column;
+    }
+    .mw-100{
+        max-width: 100%;
+    }
+    .about_right{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about_right li{
+        text-align: left;
     }
   }
 
@@ -197,5 +213,15 @@ header {
     }
     main .main__welcome p{
         font-size: 14px;
+    }
+    .mw-100{
+        max-width: 100%;
+    }
+    .main__about{
+        flex-direction: column;
+    }
+    main .wrapper .about_right h1{
+        margin-top: 10px;
+        font-size: 20px;
     }
   }

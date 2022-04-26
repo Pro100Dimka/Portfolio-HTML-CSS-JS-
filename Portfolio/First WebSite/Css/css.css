@@ -22,7 +22,7 @@ header {
 .header___logo{
     text-transform: uppercase;
     color: white;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 24px;
     margin-left: 12%; 
     cursor: pointer;
@@ -46,13 +46,13 @@ header {
       display: none;
   }
 
-  @media screen and (max-width:1200px) {
+  @media screen and (max-width:1300px) {
     nav {
         margin-left: 20%;
     }
   }
 
-  @media screen and (max-width:1105px) {
+  @media screen and (max-width:1205px) {
     nav {
         margin-left: 10%;
     }
@@ -71,6 +71,7 @@ header {
     nav{
         width: 100%;
     }
+    /*Бургер меню*/
     .topnav.responsive{
         position: relative;
         top: 50px;
@@ -89,4 +90,70 @@ header {
         display: block;
         text-align: left;
     }
+  }
+  /*Второй блок*/
+  main{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+  main .main__welcome{
+    background: #000;
+    text-align: center;
+    padding: 210px 0 426px 0;
+  }
+  main .main__welcome p{
+      color: #c1c1c1;
+      font-size: 20px;
+  }
+  main .main__welcome h1{
+    color: #c1c1c1;
+    font-size: 44px;
+    font-weight: normal;
+
+  }
+ .mycompany{
+    color: #fcac45;
+    font-weight: 700;
+  }
+  .text{
+    color: #d4d4d4;
+    font-weight: 700;
+  }
+  .wrapper{
+      width: 76%;
+      margin: 0 auto;
+  }
+  .main__about{
+      display: flex;
+      padding: 105px 0 103px 0;
+  }
+  .about_right{
+      margin-left: 175px;
+      width: 422px;
+  }
+  main .wrapper .about_right h1{
+      text-transform: uppercase;
+      color: #222222;
+      font-size: 34px;
+      padding-bottom: 22px;
+      border-bottom: 3px solid #fcac45;
+      font-weight: normal;
+      display: inline-block;
+  }
+
+  .RightText{
+      color:#222222;
+      font-weight: 700;
+
+  }
+  main .wrapper .about_right p{
+      margin-top: 32px;
+      font-size: 18px;
+      padding-bottom: 50px;
+      font-weight: 300;
+      color: #848484;
+  }
+  .about_right li{
+      background: url(Images/Dot.png) 0px no-repeat;
   }

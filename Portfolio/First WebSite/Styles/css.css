@@ -373,7 +373,6 @@ input[type=submit]{
     }
     .main__about{
         flex-direction: column;
-        width: 100%;
     }
     .mw-100{
         max-width: 100%;
@@ -445,6 +444,7 @@ input[type=submit]{
     }
     .main__about{
         flex-direction: column;
+        padding: 0 0 0 0;
     }
     main .wrapper .about_right h1{
         margin-top: 10px;

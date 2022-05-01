@@ -16,23 +16,23 @@
         <!--Навигационное меню-->
         <nav>
             <div class="topnav" id="myTopnav">
-                <a href="#">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">SERVISES</a>
-                <a href="#">PORTFOLIO</a>
-                <a href="#">TESTIMONIALS</a>
-                <a href="#">CONTACT</a>
+                <a href="#home" id="home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#services">SERVISES</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#testimonials">TESTIMONIALS</a>
+                <a href="#contact">CONTACT</a>
                 <!--Иконка бургер меню-->
                 <a href="#" id="menu" class="icon">&#9776;</a>
             </div>
         </nav>
     </header>
     <main>
-        <div class="main__welcome">
+        <div  class="main__welcome">
             <h1>WELCOME ON <span class="mycompany" >MYCOMPANY</span></h1>
             <p>We are a digital agency with <span class="text" >years of experience </span>and with <span class="text" >extraordinary people</span></p>
         </div>
-        <div class="wrapper">
+        <div id="about" class="wrapper">
             <div class="main__about">
                 <div class="about_left">
                     <img class="mw-100" src="Images/mac.png" alt="mac">
@@ -80,7 +80,7 @@
                 </div>
             </div>
         </div>
-        <div class="main_servises">
+        <div id="services" class="main_servises">
             <div class="wrapper">
                 <h1>OUR SERVISES</h1>
                 <div class="line"></div>
@@ -110,7 +110,7 @@
             </div>
         </div>
         <div class="main_clients">
-            <h1>SOME OF <span class="client">OUR CLIENTS</span></h1>
+            <h1 >SOME OF <span class="client">OUR CLIENTS</span></h1>
             <div class="line"></div>
             <div class="clients">
                 <img src="Images/Chanel.png" alt="Chanel">
@@ -120,7 +120,7 @@
                 <img src="Images/Lacoste.png" alt="Lacoste">
             </div>
         </div>
-        <div class="main_work">
+        <div id="portfolio" class="main_work">
             <div class="wrapper">
                 <h1>TAKE A LOOK AT OUR WORK</h1>
                 <div class="line"></div>
@@ -147,8 +147,8 @@
                     </div>
                 </div>
         </div>
-        <div class="main_testimonials">
-            <h1><span class="client">our clients’</span> testimonials</h1>
+        <div id="testimonials" class="main_testimonials">
+            <h1 ><span class="client">our clients’</span> testimonials</h1>
             <div class="line"></div>
             <div class="testimonials">
                 <p class="upper">This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
@@ -156,16 +156,15 @@
             </div>
         </div>
         <section class="contact-form">
-        
             <div class="contact_wrapper">
                 <div class="contacts">
-                    <h1>CONTACT US</h1>
+                    <h1 id="contact">CONTACT US</h1>
                     <div class="line"></div>
                     <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. </i></p>
                 </div>
                 <form action="#" name="newform" method="post">
                     <div class="forms">
-                        
+
                         <div class="form_imputs">
                             <div class="right"> <p>Name <span class="red">*                                                            </span><input type="text"></p></div>
                             <div class="left"><p>Email address <span class="red">*</span><input type="text"></p></div>

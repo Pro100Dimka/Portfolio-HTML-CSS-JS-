@@ -280,6 +280,7 @@ header {
 /*седьмой блок форма*/
 .contacts{
     text-align: center;
+    width: 100%;
 }
 .contacts h1 {
     font-size: 44px;
@@ -323,7 +324,7 @@ input, textarea {
     justify-content: flex-end;
 }
 input:first-of-type{
-    margin-right: 32px;
+    margin-right: 32.00px;
 }
 input[type=submit]{
     height: 40px;
@@ -332,6 +333,22 @@ input[type=submit]{
     color: white;
     margin-right: 0;
 }
+/*footer*/
+.social{
+    width: 100%;
+    background: #222222;
+    padding: 32px 0 29px 0;
+    display: flex;
+    justify-content: center;
+}
+.social img{
+    margin: 0 7px 0 7px;
+}
+.social img:hover {
+    opacity: 0.6;
+}
+
+
   @media screen and (max-width:1320px) {
     nav {
         margin-left: 20%;

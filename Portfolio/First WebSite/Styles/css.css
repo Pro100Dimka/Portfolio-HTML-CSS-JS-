@@ -297,11 +297,11 @@ header {
     width: 50%;
     margin: 0 auto;
     padding: 100px 0 100px 0;
-    border: 1px solid black;
 }
 /*************/
-
-
+.form_imputs{
+    display: flex;
+}
 
 .form_imputs{
     display: flex;
@@ -378,6 +378,9 @@ input[type=submit]{
     }
     main .main__welcome p{
         font-size: 20px;
+    }
+    .button_block{
+        justify-content: center;
     }
   }
 
@@ -546,19 +549,32 @@ input[type=submit]{
         width: 80%;
         margin: 0 auto;
     }
+    input{
+        height: 30px;
+        width: 700px;
+    }
+    textarea{
+        width: 700px;
+    }
+    .form_imputs{
+        flex-direction: column;
+    }
 
   }
   @media screen and (max-width:1100px) {
     input{
-        width: 250px;
+        width: 700px;
     }
     textarea{
-        width: 534px;
+        width: 700px;
+    }
+    .form_imputs{
+        flex-direction: column;
     }
   }
   @media screen and (max-width:800px) {
     input{
-        display: block;
+        height: 20px;
         width: 100%;
     }
     textarea{
@@ -569,10 +585,11 @@ input[type=submit]{
     }
     .right {
         flex-direction: column;
-        border: 1px solid blue;
     }
     .left{
         flex-direction: column;
-        border: 1px solid blue;
+    }
+    .form_imputs{
+        flex-direction: column;
     }
   }

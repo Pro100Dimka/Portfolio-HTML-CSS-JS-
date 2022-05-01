@@ -11,5 +11,16 @@ menu.onclick = function Burger(){
     else{
         myTopnav.className = "topnav"
     }
-
+}
+// Якорь
+const anchors = document.querySelectorAll('a[href*= "#"]');
+for (let anc of anchors){
+    anc.addEventListener("click", function(event) {
+        event.preventDefault();
+        const BlockID = anc.getAttribute('href')
+        document.querySelector('' +BlockID).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        })
+    })
 }

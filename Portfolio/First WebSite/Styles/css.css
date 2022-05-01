@@ -556,3 +556,23 @@ input[type=submit]{
         width: 534px;
     }
   }
+  @media screen and (max-width:800px) {
+    input{
+        display: block;
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+    .forms{
+        flex-direction: column;
+    }
+    .right {
+        flex-direction: column;
+        border: 1px solid blue;
+    }
+    .left{
+        flex-direction: column;
+        border: 1px solid blue;
+    }
+  }

@@ -395,7 +395,8 @@ input[type=submit]{
         font-size: 20px;
     }
     .about_right{
-        width: 80%;
+        margin-top: 40px;
+        width: 100%;
     }
   }
   @media screen and (max-width:1010px) {

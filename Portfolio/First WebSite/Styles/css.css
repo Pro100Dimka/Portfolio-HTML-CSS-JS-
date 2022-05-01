@@ -373,6 +373,7 @@ input[type=submit]{
     }
     .main__about{
         flex-direction: column;
+        width: 100%;
     }
     .mw-100{
         max-width: 100%;

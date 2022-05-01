@@ -15,7 +15,8 @@ body{
 
 /*Первый блок. Логотип и портфолио*/
 header {
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     background-color: #000;
     display: flex;

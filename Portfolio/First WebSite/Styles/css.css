@@ -86,7 +86,7 @@ header {
   }
   .about_right{
       margin-left: 175px;
-      width: 422px;
+      width: 40%;
   }
   main .wrapper .about_right h1{
       text-transform: uppercase;
@@ -394,6 +394,9 @@ input[type=submit]{
     .servises_card h4{
         font-size: 20px;
     }
+    .about_right{
+        width: 80%;
+    }
   }
   @media screen and (max-width:1010px) {
     .topnav a {
@@ -444,7 +447,9 @@ input[type=submit]{
     }
     .main__about{
         flex-direction: column;
-        padding: 0 0 0 0;
+    }
+    .about_right{
+        width: 80%;
     }
     main .wrapper .about_right h1{
         margin-top: 10px;

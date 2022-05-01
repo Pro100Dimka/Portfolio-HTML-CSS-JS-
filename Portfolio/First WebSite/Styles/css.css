@@ -14,6 +14,25 @@ body{
 }
 
 /*Первый блок. Логотип и портфолио*/
+.upward{
+    position: fixed;
+    bottom: 400px;
+    right: 40px;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    background: url(../Images/Updawn.png);
+    background-size:cover;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.upward.active{
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
 header {
     position: sticky;
     top: 0;

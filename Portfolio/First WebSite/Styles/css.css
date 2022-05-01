@@ -291,11 +291,18 @@ header {
     font-size: 16px;
     color: #787878;
 }
+
+
 .contact_wrapper{
-    width: 754px;
+    width: 50%;
     margin: 0 auto;
     padding: 100px 0 100px 0;
+    border: 1px solid black;
 }
+/*************/
+
+
+
 .form_imputs{
     display: flex;
 }
@@ -306,7 +313,7 @@ header {
     color: red;
 }
 input{
-    width: 360px;
+    width: 320px;
     height: 40px;
     font-size: 20px;
     margin-bottom: 30px;
@@ -324,7 +331,7 @@ input, textarea {
     justify-content: flex-end;
 }
 input:first-of-type{
-    margin-right: 32.00px;
+    margin-right: 32px;
 }
 input[type=submit]{
     height: 40px;
@@ -347,7 +354,6 @@ input[type=submit]{
 .social img:hover {
     opacity: 0.6;
 }
-
 
   @media screen and (max-width:1320px) {
     nav {
@@ -514,6 +520,22 @@ input[type=submit]{
     .main_work h1{
         font-size: 25px;
         margin-bottom: 25px;
-
+    }
+    .contact_wrapper{
+        width: 80%;
+        margin: 0 auto;
+        /*padding: 100px 0 100px 0;*/
+    }
+    .right {
+        margin-right: 30%;
+        border: 1px solid black;
+    }
+    input{
+        padding-right: 0;
+        width: 100%;
+    }
+    .left {
+        margin-left: 30%;
+        border: 1px solid black;
     }
   }

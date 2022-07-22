@@ -1,0 +1,172 @@
+body {
+	font-family: Arial;
+}
+/*---------first block--------*/
+header {
+	overflow: hidden;
+	margin: -3px;
+	background-image: url(../img/first-bg.jpg);
+	background-size: cover;
+	width: auto;
+	height: 100vh;
+	outline: 6px solid red;
+}
+.menu-z {
+	overflow: hidden;
+	width: 70%;
+	height: auto;
+	margin: 3% auto 0 auto;
+}
+.menu-img {
+	display: block;
+	float: left;
+	width: 80px;
+	height: 20px;
+}
+.menu-img:hover {
+	cursor:pointer;
+	
+}
+ul.menu {
+	width: 37%;
+	height: auto;
+	margin-top: -2%;
+	float: right;
+	clear: left;
+	list-style: none;
+}
+li.menu-two {
+	margin: 0 auto 0 auto;
+	padding: 0 1% 0 1%;
+	display: inline;
+}
+a.menu-href {
+	text-align: right;
+	text-align: center;
+	font-size: 80%;
+	display: inline-block;
+	text-decoration: none;
+	color: #eaeaea;
+}
+.menu-href:hover {
+	color: yellow;
+}
+h1 {
+	text-align: center;
+	margin: 50vh auto 0 auto;
+	color: #eaeaea;
+}
+.submit {
+	display: block;
+	overflow: hidden;
+	margin: 20vh auto 0 auto;
+	width: 250px;
+	height: 65px;
+	background-color: #fed136;
+	border: solid #fed136;
+	border-radius: 3%;
+}
+.submit:hover {
+	color: white;
+	cursor: pointer;
+	transition: all 0.3s;
+	transform: scale(1.1);
+}
+/*---------second block--------*/
+section {
+	overflow: hidden;
+	height: auto;
+	width: auto;
+	margin: 50px auto 0 auto;
+}
+h2.services {
+	font-size: 180%;
+	margin: 0 auto 0 auto;
+	width: auto;
+	text-align: center;
+}
+p.cr {
+	width: auto;
+	text-align: center;
+	margin: 2% auto 0 auto;
+	font-size: 80%;
+	color: #777777;
+}
+.container {
+	overflow: hidden;
+	width: auto;
+	margin: 5% auto 0 auto;
+}
+.container-image-and-text {
+	float: left; 
+	font-size: 80%;
+	height: auto;
+	width: 28%;
+	text-align: center;
+	padding: 2%;
+	margin: 0 auto 0 auto;
+}
+p.gray {
+	margin: 9% auto 0 auto;
+	width: auto;
+	color: #777777;
+	font-size: 10pt;
+}
+p.bold {
+	font-weight: bold;
+}
+/*---------third block--------*/
+article {
+	overflow: hidden;
+	height: auto;
+	width: auto;
+	margin: 0 auto 0 auto;
+}
+h2.OUR_PORTFOLIO {
+	width: auto;
+	text-align: center;
+	margin: 2% auto 0 auto;
+	font-size: 28.99pt;
+}
+.int {
+	text-align: center;
+	overflow: hidden;
+	width: auto;
+	height: auto;
+	margin: 10% auto 0 auto;
+}
+p.crr {
+	margin: 5% auto 0 auto;
+	width: auto;
+	text-align: center;
+	font-size: 80%;
+	color: #777777;
+}
+.image {
+	height: 25%;
+	width: 25%;
+	display: inline-block;
+	padding: 0 3% 0 3%
+}
+/*---------third block--------*/
+footer{
+	width: auto;
+	height: 38vh;
+}
+.footer {
+	margin: 2% auto 0 auto;
+	width: auto;
+	height: 28vh;
+	background-color: #2a2a2a;
+}
+.rights {
+	float: right;
+	color: white;
+	margin: 7% 3% 0 0;
+}
+.image-footer {
+	margin: 1% 0 0 3%;
+}
+.image-footer:hover {
+	cursor:pointer;
+}

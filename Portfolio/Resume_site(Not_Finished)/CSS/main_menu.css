@@ -1,0 +1,63 @@
+body{
+	font-family: 'URW Chancery L', cursive;
+	background: url(../pictures/Photo.jpg);
+	background-attachment: fixed;			
+}
+#work {
+	float: left;
+	background: url(../pictures/work.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100%;
+	width: 30%;
+	margin-top: -1%;
+	margin-left: -1%;
+	position: fixed;
+}
+#work .menu {
+	display: block;
+	width: 86%;
+	font-family: 'URW Chancery L', cursive;
+	font-style: oblique;
+	font-size: 16pt;
+	text-shadow: 1px 0px 4px red;
+	padding: 7%;
+	color: #901919;
+	text-decoration: none;
+	text-align: center;
+	border-bottom:  1px solid #b63743;
+	
+	}
+#work .menu:hover {
+	font-size: 20pt;
+	background-color: rgba(24,33,52,0.7);
+	transition: all 0.3s;
+}
+#work .menu:active {
+	font-size: 18pt;
+	transition: all 0.0s;
+}
+#Contact_me {
+	line-height: 2.0;
+	color: #901919;
+	float: bottom;
+	font-family: 'URW Chancery L';
+	font-style: oblique;
+	font-size: 14pt;
+	text-align: center;
+	padding: 5%;
+	margin-top: 5%;
+	}
+#work .social{
+	display: block;
+	float: left;
+	padding: 5%;
+	margin-left: 10%
+}
+#work .social:hover {
+	transform: scale(1.2);
+	transition: all 0.3s;}
+#work .social:active {
+	transform: scale(1.0);
+	transition: all 0.0s;
+}

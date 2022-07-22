@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>Кредитный Калькулятор</title>
+</head>
+<body>
+    <div class = "parent">
+        <div class = "main">
+            <div class = "firstbox">
+                <h1>Параметры кредита</h1>
+                <hr>
+            </div>
+            <div class =  centertext>
+                <div class = "field">
+                    <label class = "text">Cумма кредита:</label>
+                        <input class = "StringSumOfCredit" maxlength="15" size="20"> 
+                        <form action="">
+                            <select class = "Currency" size="1">
+                                <option value="UAH">грн</option>
+                                <option value="DOLLARS">$</option>
+                                <option value="EUROS">€</option>
+                            </select>
+                        </form>
+                </div>
+                <div class = "field">
+                    <label class = "text">Срок кредита:</label> 
+                    <input class = "StringTerminOfCredit" maxlength="15" size="20">
+                    <form action="">
+                        <select class = "Termin" size="1">
+                            <option value="years">лет</option>
+                            <option value="month">мес.</option>
+                        </select>
+                    </form>
+                </div>
+                <div class = "field">
+                    <label class = "text">Процентная ставка:</label> 
+                    <input class = "StringPercentOfCredit" maxlength="15" size="20">
+                    <form action="">
+                        <select class = "Perc" size="1">
+                            <option value="PercentMonth">%в мес</option>
+                            <option value="PercentYear">%в год</option>
+                        </select>
+                    </form>
+                </div>
+                <div class = nacl>
+                    <p>Дополнительные параметры</p>
+                </div>
+                <div class = "field">
+                    <label class = "text">Единовременная комиссия:</label> 
+                    <input class = "StringOfComission" maxlength="15" size="20">
+                    <form action="">
+                        <select class = "FirctComission" size="1">
+                            <option value="PercentFromCredit">% от суммы кредита</option>
+                            <option value="FixedPrice">фиксир. сумма</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="button">
+                    <button>Посчитать</button>
+                </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

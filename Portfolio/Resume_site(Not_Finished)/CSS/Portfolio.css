@@ -1,0 +1,18 @@
+.port {
+	margin: auto auto auto 30%;
+}
+.me {
+	margin: 0 0 10% 0;
+	color: red;
+	width: auto;
+	text-align: center;
+}
+.port.first {
+	float: right;
+	display: block;
+}
+.first:hover {
+	transform: scale(1.2);
+	transition: all 0.3s;
+	box-shadow: 0 0 6px 5px rgba(58,219,253, 0.35);
+}

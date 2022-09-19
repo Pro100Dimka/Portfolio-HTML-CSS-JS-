@@ -1,0 +1,12 @@
+.header{
+    /* margin: 15% auto; */
+    width: 300px;
+    height: 600px;
+    background: green;
+    overflow-y:scroll
+}
+td{
+
+    border: 1px solid black;
+  }
+  

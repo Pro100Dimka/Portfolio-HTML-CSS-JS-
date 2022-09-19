@@ -60,98 +60,176 @@ button:hover {
     margin-left: 50px;
   }
 .hidden{
-    position: absolute;
-    visibility: hidden
+    align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+    width: 50%;
+}
+.Main-text-title-div {
+    width: 100%;
+    margin-top: 22%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;}
+.main-left-text{
+    width: 50%;
+}
+.mobilephoto{
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:1030px) {
+    .mobilephoto{
+        margin-top: 223px;
+        width: 80%;
+    }
 }
 .hiddencontainer{
     position: absolute;
     visibility: hidden
 }
+.mainphoto{
+    display:none;
+}
 .mainfoto{
+    flex-direction: row;
     overflow: hidden;
         display: flex;
-        flex-direction: column;
         width: 100%;
-        height: 900px;
+        height: 100%;
         background: url(images/02031.png) no-repeat;
+        background-size: cover; 
+}
+@media screen and (max-width:1030px) {
+    .mainfoto{
+        height: 650px;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .hidden {
+        margin-top: 70px;
+        position: absolute;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+    }
+        .mainfoto {
+            flex-direction: column;
+            overflow: hidden;
+            display: flex;
+            width: 100%;
+            height: 1200px;
+            background: url(images/02031.png) no-repeat;
+            background-size: cover;
+            flex-wrap: wrap;
+    }
+    .main-left-text {
+        width: 100%;
+    }
+    .Main-text-title-div {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:628px) {
+    .mainfoto{
+        height: 1100px;
+    }
+}
+@media screen and (max-width:580px) {
+    .mainfoto{
+        height: 1050px;
+    }
+}
+@media screen and (max-width:560px) {
+    .mainfoto{
+        height: 1000px;
+    }
 }
         .mainh1{
-            margin-top: 182px;
-            margin-left: 11.7%;
-            width: 630px;
+            /* margin-left: 11.7%; */
+            width: calc(16.4em + 22.9vw);
             height: 45px;
             border: 1px solid #61C8FF;
             
         }
-        @media screen and (max-width:1134px) {
+        @media screen and (max-width:1230px) {
             .mainh1{
-                width: 500px;
+                width: calc(12.4em + 25.9vw);
             }
         }
-        @media screen and (max-width:830px) {
+        @media screen and (max-width:1024px) {
             .mainh1{
-                width: 400px;
+                width: calc(3.4em + 36.9vw);
             }
         }
-        @media screen and (max-width:555px) {
+        @media screen and (max-width:690px) {
             .mainh1{
-                width: 300px;
+                text-align: center;
+                width: 80%;
             }
-        }
+        } 
         .mainh1h2{
             text-align: center;
-            margin: 0 -70px 0;
+            /* margin: 0 -70px 0; */
             font-style: normal;
             font-weight: 700;
-            font-size: 38px;
+            font-size: calc(1.4em + 0.9vw);
             line-height: 50px;
             text-transform: uppercase;
             color: #61C8FF;
         }
-        @media screen and (max-width:1134px) {
+        @media screen and (max-width:1280px) {
             .mainh1h2{
-                font-size: 30px;
+                font-size: calc(0.5em + 1.9vw);
             }
         }
-        @media screen and (max-width:830px) {
+        @media screen and (max-width:1080px) {
             .mainh1h2{
-                font-size: 24px;
+                font-size: calc(-0.3em + 3.0vw);
             }
-        }
-        @media screen and (max-width:555px) {
+        } 
+        @media screen and (max-width:690px) {
             .mainh1h2{
-                font-size: 17px;
+                font-size: calc(0.1em + 4vw);
             }
-        }
-        .mainProgram{
-            width: 690px;
-            height: 86px;
-            margin-left: 11.7%;
+        } 
+        @media screen and (max-width:600px) {
+        } 
+        .mainProgram {
+            width: 650px;
             margin-top: 26px;
-            top: 267px;
             font-family: 'Cera Pro bold';
             font-style: normal;
             font-weight: 700;
-            font-size: 30px;
+            font-size: 27px;
             line-height: 43px;
             color: #FFFFFF;
         }
-        @media screen and (max-width:1134px) {
+        @media screen and (max-width:1054px) {
             .mainProgram{
-                width: 590px;
-                font-size: 24px;
+                width: 550px;
+                font-size: 22px;
             }
         }
-        @media screen and (max-width:830px) {
+        @media screen and (max-width:860px) {
             .mainProgram{
-                width: 490px;
+                width: 450px;
                 font-size: 18px;
             }
         }
-        @media screen and (max-width:555px) {
-            .mainProgram{
-                width: 390px;
-                font-size: 15px;
+        @media screen and (max-width:690px) {
+            .mainProgram {
+                width: 100%;
+                font-size: calc(0em + 4vw);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
         .mainh1span{
@@ -159,7 +237,7 @@ button:hover {
             font-family: 'Cera Pro';
         }
         .maintext{ 
-            margin-left: 11.7%;
+            /* margin-left: 11.7%; */
             margin-top: 121px;
             width: 654px;
             height: 90px;
@@ -170,28 +248,35 @@ button:hover {
             line-height: 30px;
             color: #FFFFFF;
         }
-        @media screen and (max-width:1134px) {
+        @media screen and (max-width:1268px) {
+            .maintext{
+                width: 600px;
+                font-size: 22px;
+            }
+        }
+        @media screen and (max-width:1105px) {
             .maintext{
                 width: 550px;
                 font-size: 19px;
             }
         }
-        @media screen and (max-width:830px) {
+        @media screen and (max-width:993px) {
             .maintext{
                 width: 450px;
                 font-size: 17px;
             }
         }
-        @media screen and (max-width:655px) {
+        @media screen and (max-width:895px) {
             .maintext{
-                width: 390px;
+                width: 450px;
                 font-size: 15px;
             }
         }
-        @media screen and (max-width:555px) {
+        @media screen and (max-width:690px) {
             .maintext{
-                width: 390px;
-                font-size: 12px;
+                margin-top: 131%;
+                width: 100%;
+                font-size: 15px;
             }
         }
         .mainbutton{
@@ -204,7 +289,7 @@ button:hover {
             width: 230px;
             height: 63px;
             background: #61C8FF;
-            margin-left: 11.7%;
+            /* margin-left: 11.7%; */
             margin-top: 25px;
         }
         @media screen and (max-width:1134px) {
@@ -526,7 +611,7 @@ button:hover {
 
 
 
-
+/*
 @media screen and (max-width:320px) {
     .popupwindow p{
         font-size: 14px;
@@ -657,17 +742,17 @@ button:hover {
             font-size: 14px;
             line-height: 100%;
             /* or 23px */
-            display: flex;
+           /* display: flex;
             align-items: center;
             text-align: center;
             text-transform: uppercase;
             /* black */
-            color: #000000;
+            /*color: #000000;
             /* Inside auto layout */
-            flex: none;
+            /*flex: none;
             order: 0;
             flex-grow: 0;
-        }
+        /*}
         .mainphoto{
             position: absolute;
             width: 50px;
@@ -817,7 +902,7 @@ button:hover {
                 }
                 .thirdcontainerdesk p{
                     /* position: absolute; */
-                    top:2000px;
+                 /*   top:2000px;
                     margin-top: 23px;
                     font-family: 'Cera Pro';
                     font-size: 16px;
@@ -827,7 +912,7 @@ button:hover {
                 }
                 .imagecontainercurency{
                     /* position: absolute; */
-                    top:2000px;
+                  /*  top:2000px;
                     position: absolute;
             top: 800px;
                     position: absolute;
@@ -891,7 +976,7 @@ button:hover {
                 }
                 .thirdcontainerdesktwo p {
                     /* position: absolute; */
-                    top:2000px;
+                   /* top:2000px;
                     margin-top: 23px;
                     font-family: 'Cera Pro';
                     font-size: 25px;
@@ -920,7 +1005,7 @@ button:hover {
                 }
                 .thirdcontainerlistul {
                     /* position: absolute; */
-                    top:3000px;
+                  /*  top:3000px;
                     line-height: 5%;
                     list-style-image: url(images/check.png);
                     width:  250px;
@@ -936,15 +1021,15 @@ button:hover {
                 }
                 .bluespanConteinertree{
                     /* position: absolute; */
-                    top:2000px;
+                   /* top:2000px;
                     color: #61C8FF;
                     font-family: 'Cera Pro bold';
                 }
                 .thirdcontainerbutton{
                     /* position: absolute; */
                     
-                    top:1800px;
-                    display: flex;
+                   /* top:1800px;
+                   /* display: flex;
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
@@ -958,8 +1043,8 @@ button:hover {
                 }
                 .thirdcontainerbuttonspan{
                     /* position: absolute; */
-                    top:2000px;
-                    width: 217px;
+                   /* top:2000px;
+                 /*   width: 217px;
                     height: 23px;
                     font-family: 'Cera Pro';
                     font-style: normal;
@@ -985,4 +1070,4 @@ button:hover {
             height: 250px;
         }
 
-    }
+    }*/

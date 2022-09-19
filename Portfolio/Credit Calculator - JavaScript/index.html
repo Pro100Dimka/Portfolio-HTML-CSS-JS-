@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кредитный Калькулятор</title>
 </head>
 <body>
@@ -17,6 +18,7 @@
             <div class =  centertext>
                 <div class = "field">
                     <label class = "text">Cумма кредита:</label>
+                    <div class="flex">
                         <input class = "StringSumOfCredit" maxlength="15" size="20"> 
                         <form action="">
                             <select class = "Currency" size="1">
@@ -25,9 +27,11 @@
                                 <option value="EUROS">€</option>
                             </select>
                         </form>
+                    </div>
                 </div>
                 <div class = "field">
                     <label class = "text">Срок кредита:</label> 
+                    <div class="flex">
                     <input class = "StringTerminOfCredit" maxlength="15" size="20">
                     <form action="">
                         <select class = "Termin" size="1">
@@ -36,8 +40,10 @@
                         </select>
                     </form>
                 </div>
+                </div>
                 <div class = "field">
                     <label class = "text">Процентная ставка:</label> 
+                    <div class="flex">
                     <input class = "StringPercentOfCredit" maxlength="15" size="20">
                     <form action="">
                         <select class = "Perc" size="1">
@@ -46,6 +52,7 @@
                         </select>
                     </form>
                 </div>
+            </div>
                 <div class = nacl>
                     <p>Дополнительные параметры</p>
                 </div>
@@ -60,7 +67,7 @@
                     </form>
                 </div>
                 <div class="button">
-                    <button>Посчитать</button>
+                    <button class="result">Посчитать</button>
                 </div>
         </div>
         

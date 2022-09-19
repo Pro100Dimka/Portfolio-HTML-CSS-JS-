@@ -33,13 +33,14 @@
      /*margin-right: 5%;*/
      padding: 10px;
 }
-.field > label {
+/* .field > label {
     flex: 1;
     
-}
+} */
 .field > form {
     flex: 1;
 }
+
 .section {
     display: flex;
      justify-content: flex-end;
@@ -55,31 +56,78 @@
 }
 .text {
     font-size: 13pt;
-    width: 150px;
+    width: 185px;
 }
 .StringSumOfCredit {
     height: 13px;
     margin-right: 10px;
+    width: 82%;
+    height: 25px;
 }
 .StringTerminOfCredit {
     height: 13px;
     margin-right: 10px;
+    width: 81%; 
+    height: 25px;
 }
 .StringPercentOfCredit{
     height: 13px;
     margin-right: 10px;
+    width: 76%;
+    height: 25px;
 }
 .StringOfComission
 {
     height: 13px;
     margin-right: 10px;
+    width: 56%;
+    height: 25px;
 }
 .StringMounthComission{
     height: 13px;
     margin-right: 10px;
+    height: 25px;
 }
 
 .button {
     text-align: center;
     padding: 4%;
+}
+.flex{
+    width: 100%;
+    display: flex;
+}
+.Currency {
+    height: 31px;
+}
+.Termin{
+    height: 31px;
+}
+.Perc{
+    height: 31px;
+}
+.FirctComission{
+    height: 31px;
+}
+.result{
+    width: 200px;
+    height: 32px;
+}
+@media screen and (max-width:650px) {
+    .main {
+        width: 70%;
+    }
+    .field {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .field > label {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .field > form {
+        margin-top: 20px;
+    }
 }

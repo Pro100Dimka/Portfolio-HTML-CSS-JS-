@@ -34,3 +34,8 @@
     flex: 1;
     text-align: right;
 }
+@media screen and (max-width:650px) {
+    .main {
+        width: 70%;
+    }
+}

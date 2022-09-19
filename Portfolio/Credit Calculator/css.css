@@ -22,6 +22,7 @@
 .firstbox {
     text-align: center;
 }
+
 .nacl {
     font-size: 14pt;
     text-align: center;
@@ -115,7 +116,11 @@
 }
 @media screen and (max-width:650px) {
     .main {
+        padding: 20px;
         width: 70%;
+    }
+    .firstbox {
+        font-size: 12px;
     }
     .field {
         display: flex;

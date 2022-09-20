@@ -88,8 +88,20 @@ button:hover {
     }
 }
 .hiddencontainer{
-    position: absolute;
-    visibility: hidden
+    width: 50%
+}
+@media screen and (max-width:690px) {
+    .hiddencontainer{
+        width: 80%
+    }
+}
+.sec-block-text{
+    width: 50%;
+}
+@media screen and (max-width:690px) {
+    .sec-block-text{
+        width: 80%;
+    }
 }
 .mainphoto{
     display:none;
@@ -364,10 +376,23 @@ button:hover {
 
 
 
-
+.mobilephototwo{
+    width: 90%;
+    height: auto;
+}
 .secondcontainer{
     width: 100%;
     background: #FFFFFF;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 102px;
+}
+@media screen and (max-width:690px) {
+.secondcontainer {
+    align-items: center;
+    margin-top: 102px;
+    flex-direction: column-reverse;
+}
 }
         .secondcontainerphoto{
             width: 764px;
@@ -378,9 +403,8 @@ button:hover {
         }
         .secondcontainertext{
             width: 690px;
-            height: 108px;
-            margin-top: 102px;
-            margin-left: 845px;
+            
+            /* margin-left: 845px; */
             font-family: 'Cera Pro';
             font-style: normal;
             font-weight: 900;
@@ -389,12 +413,48 @@ button:hover {
             text-transform: uppercase;
             color: #000000;
         }
+        @media screen and (max-width:1385px) {
+            .secondcontainertext{
+                width: 590px;
+                font-size: 22px;
+            }
+        }
+        @media screen and (max-width:1015px) {
+            .secondcontainertext{
+                width: 490px;
+                font-size: 18px;
+            }
+        }
+        @media screen and (max-width:837px) {
+            .secondcontainertext{
+                width: 390px;
+                font-size: 15px;
+            }
+        }
+        @media screen and (max-width:690px) {
+            .secondcontainertext {
+                width: 100%;
+                text-align: center;
+                font-size: 15px;
+            }
+        }
         .cera{font-family: 'Cera Pro bold';}
         .secondcontainerlist{
             width: 550px;
-            height: 398px;
+            /* height: 398px; */
             margin-top: 47px;
-            margin-left: 845px;
+            display: inline-block;
+            /* margin-left: 845px; */
+        }
+        @media screen and (max-width:1105px) {
+            .secondcontainerlist {
+                margin-top: 37px;
+            }
+        }
+        @media screen and (max-width:837px) {
+            .secondcontainerlist{
+                margin-top: 20px;
+            }
         }
         .secondcontainerlistul {
             line-height: 1;
@@ -409,6 +469,30 @@ button:hover {
             color: #000000;
             padding-left: 25px;
         }
+        @media screen and (max-width:1385px) {
+            .secondcontainerlistul {
+                width: 500px;
+                height: 50px;
+                font-size: 20px;
+                line-height: 100%;
+                padding-left: 20px;
+            }
+        }
+        @media screen and (max-width:1105px) {
+            .secondcontainerlistul {
+                width: 350px;
+                height: 50px;
+                font-size: 18px;
+                line-height: 120%;
+                padding-left: 15px;
+            }
+        }
+        @media screen and (max-width:837px) {
+            .secondcontainerlistul{
+                width: 300px;
+                font-size: 15px;
+            }
+        }
         .secondcontainerbutton{
             display: flex;
             flex-direction: row;
@@ -419,7 +503,7 @@ button:hover {
             width: 277px;
             height: 63px;
             margin-top: 45px;
-            margin-left: 845px;
+            /* margin-left: 845px; */
             background: #61C8FF;
         }
         .secondcontainerbuttonspan{

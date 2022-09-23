@@ -81,10 +81,10 @@ button:hover {
     width: 100%;
     height: auto;
 }
-@media screen and (max-width:1030px) {
+@media screen and (max-width:690px) {
     .mobilephoto{
-        margin-top: 223px;
-        width: 80%;
+        margin-top: 268px;
+        width: 90%;
     }
 }
 .hiddencontainer{
@@ -136,7 +136,7 @@ button:hover {
             overflow: hidden;
             display: flex;
             width: 100%;
-            height: 1200px;
+            height: 1400px;
             background: url(images/02031.png) no-repeat;
             background-size: cover;
             flex-wrap: wrap;
@@ -150,19 +150,29 @@ button:hover {
 }
 @media screen and (max-width:628px) {
     .mainfoto{
-        height: 1100px;
+        height: 1300px;
     }
-}
+    .mainbutton{
+        width: 70%;
+        height: 10%;
+        margin-top: 80px;
+    }
+} 
 @media screen and (max-width:580px) {
     .mainfoto{
-        height: 1050px;
+        height: 1300px;
     }
 }
 @media screen and (max-width:560px) {
     .mainfoto{
-        height: 1000px;
+        height: 1300px;
     }
-}
+} 
+@media screen and (max-width:500px) {
+    .mainfoto{
+        height: 1080px;
+    }
+} 
         .mainh1{
             /* margin-left: 11.7%; */
             width: calc(16.4em + 22.9vw);
@@ -183,7 +193,7 @@ button:hover {
         @media screen and (max-width:690px) {
             .mainh1{
                 text-align: center;
-                width: 80%;
+                width: 90%;
             }
         } 
         .mainh1h2{
@@ -208,10 +218,8 @@ button:hover {
         } 
         @media screen and (max-width:690px) {
             .mainh1h2{
-                font-size: calc(0.1em + 4vw);
+                font-size: calc(0em + 5.3vw);
             }
-        } 
-        @media screen and (max-width:600px) {
         } 
         .mainProgram {
             width: 650px;
@@ -238,7 +246,7 @@ button:hover {
         @media screen and (max-width:690px) {
             .mainProgram {
                 width: 100%;
-                font-size: calc(0em + 4vw);
+                font-size: calc(0em + 6.1vw);
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -288,7 +296,14 @@ button:hover {
             .maintext{
                 margin-top: 131%;
                 width: 100%;
-                font-size: 15px;
+                font-size: 23px;
+            }
+        }
+        @media screen and (max-width:690px) {
+            .maintext{
+                margin-top: 143%;
+                width: 100%;
+                font-size: 23px;
             }
         }
         .mainbutton{
@@ -322,6 +337,20 @@ button:hover {
                 height: 20px;
             }
         }
+        @media screen and (max-width:690px) {
+            .mainbutton{
+                width: 70%;
+                height: 10%;
+                margin-top: 60px;
+            }
+        }
+        @media screen and (max-width:628px) {
+            .mainbutton{
+                width: 70%;
+                height: 10%;
+                margin-top: 104px;
+            }
+        } 
         .mainbuttonspan{
             width: 217px;
             height: 23px;
@@ -352,9 +381,9 @@ button:hover {
                 font-size: 15px;
             }
         }
-        @media screen and (max-width:555px) {
+        @media screen and (max-width:690px) {
             .mainbuttonspan{
-                font-size: 12px;
+                font-size: 23px;
             }
         }
         .mainphoto{

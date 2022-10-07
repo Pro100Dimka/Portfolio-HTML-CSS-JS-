@@ -55,6 +55,8 @@ function myLoop() {
       document.getElementsByClassName("mainfoto")[
         a
       ].style.background = `url(images/${MainBackground[i]}) no-repeat`;
+      document.getElementsByClassName("mainfoto")[a].style.backgroundSize =
+        "cover";
     }
     for (a = 0; a < document.getElementsByClassName("mainphoto").length; a++) {
       document.getElementsByClassName("mainphoto")[

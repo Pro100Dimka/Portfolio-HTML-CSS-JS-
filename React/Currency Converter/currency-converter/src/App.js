@@ -3,12 +3,9 @@ import React from "react";
 import Header from "./header/header";
 import CurrencyConverter from "./CurrencyConverter/CurrencyConverter";
 export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      CurrencyItems: [],
-    };
-  }
+  state = {
+    CurrencyItems: [],
+  };
   getCurrencyFromApi = async () => {
     try {
       let response = await fetch(
@@ -21,9 +18,8 @@ export default class App extends React.Component {
     }
   };
   async componentDidMount() {
-    let CurrencyItems = await this.getCurrencyFromApi();
     this.setState({
-      CurrencyItems: CurrencyItems,
+      CurrencyItems: await this.getCurrencyFromApi(),
     });
   }
   render() {
